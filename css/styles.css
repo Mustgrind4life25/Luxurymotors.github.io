@@ -1,0 +1,221 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	background: #050507;
+}
+
+body{
+	height: 100vh;
+}
+
+img{
+	width: 100%;
+}
+
+/* navbar */
+.navbar{
+	background: #050507;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 20px;
+}
+
+#nav-links{
+	color: #fff;
+	text-transform: uppercase;
+}
+
+#nav-links:hover{
+	color: #E2C275;
+}
+
+/* contact logo style */
+.contact-logo{
+	color: #fff;
+	background-color: #E2C275;
+	padding: 3px;
+}
+
+.contact-logo:hover{
+	color: #fff;
+}
+
+
+
+.list-item{
+	display: inline-block;
+	padding: 20px 10px;
+}
+
+/* menu section */
+.menu-line{
+	width: 20px;
+	height: 3px;
+	background: #fff;
+	margin-bottom: 4px;
+}
+
+.menu{
+	display: none;
+}
+
+
+/* main header section */
+.main-header{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 40px 0 30px 0;
+	color: #fff;
+}
+
+.main-header p{
+	color: #E2C275;
+	text-transform: capitalize;
+}
+
+.main-header h1{
+	text-transform: uppercase;
+	padding: 0 0 8px 0;
+}
+
+/* image section */
+.container-img{
+	text-align: center;
+}
+
+
+/* contact section */
+#contact{
+	color: #fff;
+}
+
+
+form{
+	display: flex;
+	justify-content: flex-end;
+	column-gap: 8px;
+	margin: 10px;
+}
+
+
+.contact-header{
+	flex-grow: 2;
+}
+
+form input{
+	background: #fff;
+}
+
+#btn-submit{
+	color: #fff;
+	background: #E2C275;
+	font-size: 12px;
+	padding: 3px;
+}
+
+#btn-submit:hover{
+	background: #fff;
+	color: #000;
+}
+
+/* style for the invalid fields */
+input:invalid{
+	border-color: #413F42;
+}
+
+input:focus:invalid{
+	outline: none;
+}
+
+/* style of our error messages */
+#error-name{
+	/*width: 100%;*/
+	padding: 0;
+
+	font-size: 80%;
+	color: #fff;
+	background-color: #E2C275;
+	border-radius: 0 0 5px 5px;
+	box-sizing: border-box;
+}
+
+#error-name.active{
+	padding: 0.3em;
+}
+
+#error-email{
+	/*width: 100%;*/
+	padding: 0;
+
+	font-size: 80%;
+	color: #fff;
+	background-color: #E2C275;
+	border-radius: 0 0 5px 5px;
+	box-sizing: border-box;
+}
+
+#error-email.active{
+	padding: 0.3em;
+}
+
+@media all and (max-width: 480px){
+	.navbar{
+		flex-direction: column;
+		position: relative;
+	}
+
+	.navbar .container-icon{
+		width: 100%;
+		padding: 10px 0 0 0;
+	}
+	.menu{
+		display: block;
+		position: absolute;
+		right: 15px;
+		top: 15px;
+		cursor: pointer;
+	}
+
+	.nav-list{
+		list-style-type: none;
+		width: 100%;
+		text-align: center;
+		padding-top: 10px;
+		display: none;
+	}
+	.list-item{
+		display: block;
+	}
+
+	.active{
+		display: block;
+	}
+}
+
+
+/* form section for bigger screen */
+
+@media screen and (max-width: 700px){
+	form{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-row-gap: 5px;
+	}
+	#btn{
+		text-align: center;
+	}
+}
+
+
+
+
+
+
+
+
+/*# sourceMappingURL=styles.css.map */
