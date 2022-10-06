@@ -7,6 +7,7 @@
 	background: #050507;
 }
 
+
 body{
 	height: 100vh;
 }
@@ -43,8 +44,6 @@ img{
 .contact-logo:hover{
 	color: #fff;
 }
-
-
 
 .list-item{
 	display: inline-block;
@@ -163,6 +162,7 @@ input:focus:invalid{
 	padding: 0.3em;
 }
 
+
 @media all and (max-width: 480px){
 	.navbar{
 		flex-direction: column;
@@ -173,6 +173,11 @@ input:focus:invalid{
 		width: 100%;
 		padding: 10px 0 0 0;
 	}
+
+	.contact-logo{
+		margin-left: 15px;
+	}
+	
 	.menu{
 		display: block;
 		position: absolute;
@@ -194,10 +199,6 @@ input:focus:invalid{
 
 	.active{
 		display: block;
-	}
-	
-	.container-icon{
-		margin-right: 10px;
 	}
 }
 
